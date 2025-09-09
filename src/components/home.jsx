@@ -29,6 +29,9 @@ const Home = ({ onLogout }) => {
     
     navigate('/');
   };
+
+  console.log(userData);
+
   return (
     
     // This is my home page or logged in page   
@@ -45,7 +48,7 @@ const Home = ({ onLogout }) => {
             <div className="profile-content">
               <div className="avatar-container">
                 <img
-                  src={profile}
+                  src={userData.image || profile}
                   alt={`${userData.firstName || 'User'} profile`}
                   className="avatar-image"
                   onError={(e) => {
