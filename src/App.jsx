@@ -1,9 +1,10 @@
-import { Login } from "./components";
+import { Login, Home } from "./components";
 
 function App() {
   return (
     <>
       <Login />
+      <Home />
     </>
   );
 }

@@ -1,0 +1,266 @@
+.logged-in-container {
+  min-height: 100vh;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-family: "Inter", sans-serif;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 113px;
+  width: 100%;
+  max-width: 267px;
+}
+
+.welcome-header {
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  line-height: 1.35;
+  text-align: center;
+  margin-bottom: -1px;
+}
+
+.welcome-text {
+  font-weight: 500;
+  color: #2e2e2e;
+  display: block;
+}
+
+.unstop-text {
+  font-weight: 900;
+  color: #6257db;
+  font-size: 46px;
+  line-height: 1.35;
+  display: block;
+  margin-left: 20px;
+}
+
+.profile-card {
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #e2e2e2;
+  border-radius: 20px;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.65);
+  padding: 20px;
+}
+
+.profile-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.avatar-container {
+  width: 122px;
+  height: 122px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: -1px;
+}
+
+.avatar-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-name {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  color: #6257db;
+  font-size: 16px;
+  text-align: center;
+  margin-top: -1px;
+  white-space: nowrap;
+}
+
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.profile-email,
+.profile-gender {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  color: #383838;
+  font-size: 12px;
+  text-align: center;
+  margin: 0;
+}
+
+.profile-email {
+  margin-top: -1px;
+}
+
+.logout-button {
+  background-color: #6257db;
+  color: #ffffff;
+  border: none;
+  border-radius: 16px;
+  width: 137px;
+  height: 48px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-top: -1px;
+}
+
+.logout-button:hover {
+  background-color: #5248c7;
+}
+
+.logout-button:active {
+  background-color: #4a40b8;
+}
+
+/* Responsive Design */
+
+/* Mobile devices (320px - 480px) */
+@media screen and (max-width: 480px) {
+  .logged-in-container {
+    padding: 15px;
+  }
+
+  .content-wrapper {
+    max-width: 100%;
+    gap: 80px;
+  }
+
+  .welcome-header {
+    font-size: 28px;
+  }
+
+  .unstop-text {
+    font-size: 36px;
+    margin-left: 15px;
+  }
+
+  .profile-card {
+    padding: 18px;
+  }
+
+  .avatar-container {
+    width: 100px;
+    height: 100px;
+  }
+
+  .logout-button {
+    width: 120px;
+    height: 44px;
+  }
+}
+
+/* Small tablets (481px - 768px) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .content-wrapper {
+    max-width: 300px;
+    gap: 100px;
+  }
+
+  .welcome-header {
+    font-size: 32px;
+  }
+
+  .unstop-text {
+    font-size: 42px;
+  }
+}
+
+/* Large tablets and small desktops (769px - 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .content-wrapper {
+    max-width: 320px;
+  }
+
+  .welcome-header {
+    font-size: 38px;
+  }
+
+  .unstop-text {
+    font-size: 48px;
+  }
+}
+
+/* Large desktops (1025px and up) */
+@media screen and (min-width: 1025px) {
+  .logged-in-container {
+    padding: 75px 14px 75px 14px;
+    height: 1013px;
+    padding-top: 200px;
+  }
+}
+
+/* Extra small devices (portrait phones, less than 320px) */
+@media screen and (max-width: 319px) {
+  .welcome-header {
+    font-size: 24px;
+  }
+
+  .unstop-text {
+    font-size: 30px;
+    margin-left: 10px;
+  }
+
+  .content-wrapper {
+    gap: 60px;
+  }
+
+  .profile-card {
+    padding: 15px;
+  }
+
+  .avatar-container {
+    width: 90px;
+    height: 90px;
+  }
+
+  .logout-button {
+    width: 110px;
+    height: 40px;
+    font-size: 11px;
+  }
+}
+
+/* Landscape orientation adjustments */
+@media screen and (orientation: landscape) and (max-height: 600px) {
+  .logged-in-container {
+    padding: 20px;
+  }
+
+  .content-wrapper {
+    gap: 40px;
+  }
+
+  .welcome-header {
+    font-size: 24px;
+  }
+
+  .unstop-text {
+    font-size: 32px;
+  }
+
+  .avatar-container {
+    width: 80px;
+    height: 80px;
+  }
+}
